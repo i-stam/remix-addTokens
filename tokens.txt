@@ -1,0 +1,30 @@
+# This is for feeding the python script that spits remix compatible fields.
+# Place the input list exactly one line below the corresponding label e.g. "Tokens:", don't use newlines for separating the list elements.
+# Input Format:
+# Tokens: a list of Ethereum addresses.
+# Symbols: a list of the corresponding ERC-20 symbols => transformed to (right-padded) bytes32.
+# Magnitude: a list of the corresponding magnitudes aka exponents e.g. 18 => 10^18 magnitude.
+# Loadable: A list of booleans indicating whether the token is loadable or not.
+# Redeemable: A list of booleans indicating whether the token is redeemable or not.
+
+Tokens:
+0x6810e776880c02933d47db1b9fc05908e5386b96, 0x4a220e6096b25eadb88358cb44068a3248254675,0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f,0x75231f58b43240c9718dd58b4967c5114342a86c
+
+Symbols:
+GNO,QNT,SNX,OKB
+
+Magnitude:
+18,18,18,18
+
+Loadable:
+true,true,false,true
+
+Redeemable:
+false,false,false,false
+
+
+
+#bytes32 output for given symbols
+  
+["0x474e4f0000000000000000000000000000000000000000000000000000000000","0x514e540000000000000000000000000000000000000000000000000000000000","0x534e580000000000000000000000000000000000000000000000000000000000","0x4f4b420000000000000000000000000000000000000000000000000000000000"]
+["0x474e4f0000000000000000000000000000000000000000000000000000000000", "0x514e540000000000000000000000000000000000000000000000000000000000", "0x534e580000000000000000000000000000000000000000000000000000000000", "0x4f4b420000000000000000000000000000000000000000000000000000000000"]
